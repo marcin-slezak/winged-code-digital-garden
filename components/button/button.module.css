@@ -1,0 +1,11 @@
+.button{
+    font-size: 16px;
+    color:white;
+    border: none;
+    border-radius: 18px;
+    padding: 0 1.4rem;
+    height:36px;
+    cursor: pointer;
+    background: rgb(205,112,227);
+    background: linear-gradient(45deg, rgba(205,112,227,1) 0%, rgba(100,166,214,1) 50%, rgba(0,217,201,1) 100%);
+}

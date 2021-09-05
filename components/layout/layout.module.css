@@ -1,5 +1,6 @@
 .layoutContainer {
     margin: auto;
-    max-width: 960px;
+    padding: 0 2rem;
+    max-width: 1000px;
     min-height: calc(100vh - 5rem);
 }

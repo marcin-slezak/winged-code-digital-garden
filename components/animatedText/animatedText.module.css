@@ -1,0 +1,7 @@
+.textContainer {
+    border-right: solid 4px black;
+    animation: blink 1.5s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes blink { 50% { border-color: white; }  }

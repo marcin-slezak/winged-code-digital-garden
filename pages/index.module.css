@@ -1,0 +1,28 @@
+.hero {
+    display: flex;
+    align-items: center;
+    margin: 6rem 0;
+    justify-content: space-between;
+}
+
+.hero > * {
+    width: 45%;
+}
+
+.hero h1{
+    margin-right: 2rem;
+}
+
+
+@media (max-width: 800px) {
+    .heroRight {
+        display: none;
+    }
+    .hero h1{
+        margin-right: 0;
+    }
+    .hero > * {
+        width: auto;
+    }
+    
+}
