@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Winged Code Digital Garden
 
-## Getting Started
+It's new version of [wingedcode.com](wingedcode.com) website in a form of digital garden. *Digital Garden* is `an online space at the intersection of a notebook and a blog`. The goal is to share knwoledge managed by [https://obsidian.md/](Obsidian) application that save a content in markdown files.
 
-First, run the development server:
+## Featres / Constrains
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- use Static Site Generator and host on dummy server
+- automate deploy to dummy server via sftp
+- be able to build pages using react + custom css and generate pages from Obsidian markdown files 
+- manage to display a snippets of code in some nice way
+- make page super fast (including aprsing markdown to html on build time)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technical side
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+This project is using [Next.js](https://nextjs.org/) framework including TypeScript and React. To learn more about Next.js, take a look at the following resources:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## How to run application
 
-## Deploy on Vercel
+Dependencies: nodejs, npm and git.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To run development enviroment
+1. Download repository
+2. install dependencies `npm install`
+3. run server `npm run dev`
+4. open in browser [http://localhost:3000](http://localhost:3000) to see webiste
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

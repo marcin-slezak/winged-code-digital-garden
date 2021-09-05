@@ -1,0 +1,20 @@
+.menuContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0 3rem;
+    align-items: center;
+}
+
+.logoText {
+    font-size:33px
+}
+
+.linksContainer {
+    display: flex;
+    margin: 0;
+}
+
+.linksContainer li {
+    margin: 0 1rem;
+    list-style: none;
+}
