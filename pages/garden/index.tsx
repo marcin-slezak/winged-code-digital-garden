@@ -17,21 +17,16 @@ const Garden: FunctionComponent<GardenProps> = ({ files }) => {
       <h1>Digital garden</h1>
       <p>Enjoy my collection ...</p>
       <ul>
-        {files.map(file => <li key={file.path}> <Link href={getUrlToFile(file)}>{file.name}</Link> </li>)}
+        {files.map(file => <li key={file.path}> <Link href={getUrlToFile(file, 'garden')}>{file.name}</Link> </li>)}
       </ul>
     </Layout>
   )
 }
 
-
 export async function getStaticProps({ params }: { params: { slug?: string[] } }) {
-  console.log({ params })
   const obsidianDirectory = path.join(process.cwd(), 'obsidianVault')
   const filesFlat = await getObsidianFilesFlat(obsidianDirectory, { filesExtensionToAccept: ['.md'] })
-
   return { props: { files: filesFlat } }
 }
-
-
 
 export default Garden
