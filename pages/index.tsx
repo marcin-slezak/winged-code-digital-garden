@@ -1,11 +1,16 @@
-import React from 'react';
+import React, {FunctionComponent} from 'react';
+import path from 'path'
 import { Layout } from '../components/layout'
 import { AnimatedText } from '../components/animatedText'
 import { AnimatedSvg } from '../components/animatedSvg'
 import { Button } from '../components/button'
 import styles from './index.module.css'
 
-export default function Home() {
+export type HomeProps = {
+
+}
+
+const Home: FunctionComponent<HomeProps> = () => {
   return (
     <Layout>
       <div className={styles.hero}>
@@ -24,9 +29,13 @@ export default function Home() {
       <p>
         I fell in love with software development many years ago. After a few dozens of projects made for someone over that time, I finally created my own disorganised and chaotic piece of the Internet. So I drop here notes, articles, news and some of my thoughts about programming and software development management.
       </p>
-      <Button text="Digital garden"/>
+      <Button text="Digital garden" onClick={() => {}}/>
+      
     </Layout>
-
-
   )
 }
+
+
+
+
+export default Home

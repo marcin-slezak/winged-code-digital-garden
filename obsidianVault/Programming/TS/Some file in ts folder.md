@@ -1,0 +1,1 @@
+Some file in ts folder =-content

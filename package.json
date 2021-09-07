@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "ols": "ts-node --project ./tsconfig-cli.json ./cli/list-obsidian-pages.ts "
   },
   "dependencies": {
     "next": "11.1.2",
