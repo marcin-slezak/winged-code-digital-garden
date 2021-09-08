@@ -1,0 +1,3 @@
+.ol { counter-reset: item; padding-left: 30px; }
+.li {display: block}
+.li:before { content: counters(item, ".") " "; counter-increment: item }
