@@ -4,7 +4,7 @@ import hljs from 'highlight.js';
 import {File} from './types'
 import {getUrlToFile} from './url'
 
-const obsidianLinks = (files: File[], filesFlatMedia: File[] ) => markdownPlugin(
+const parseObsidianLinksPlugin = (files: File[], filesFlatMedia: File[] ) => markdownPlugin(
     /!?\[\[(([^\]#\|]*)(#[^\|\]]+)*(\|[^\]]*)*)\]\]/,
 
     // this function will be called when something matches
@@ -36,4 +36,6 @@ export const render = (fileContent: string, files: File[], filesFlatMedia: File[
 
       return '<pre class="hljs"><code>' + markdown().utils.escapeHtml(str) + '</code></pre>';
     }
-  }).use(obsidianLinks(files, filesFlatMedia)).render(fileContent)
+  })
+  .use(parseObsidianLinksPlugin(files, filesFlatMedia))
+  .render(fileContent)

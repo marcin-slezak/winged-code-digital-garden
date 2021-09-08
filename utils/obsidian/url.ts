@@ -9,3 +9,7 @@ export const getUrlToFile = (file: File, prefix?: string): string => {
     const name = encodeString(file.name)
     return `/${folders}/${name}`.replace(/\/\//g, "/")
 }
+
+export const findFileByUrl = (url:string) => (file: File): boolean => url === getUrlToFile(file)
+
+export const slugToUrl = (slug: string[] | null | undefined): string => `/${(slug || []).join('/')}`

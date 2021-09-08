@@ -2,20 +2,25 @@ import * as fs from 'fs/promises';
 import * as path from 'path';
 import { Directory, File, NodeType, Nodes } from './types'
 
+export const PAGES_FILES_EXTENSIONS = ['.md']
+export const MEDIA_FILES_EXTENSIONS = ['.png', '.svg']
+
+export const getObsidianVaultDirecotryPath = () => path.join(process.cwd(), 'obsidianVault')
+
 export type Options = {
     filesExtensionToAccept?: string[],
     parentFolders?: string[]
 }
 
-export const getObsidianFilesFlat = async (rootPath: string, options?: Options): Promise<File[]> => {
+export const getObsidianFilesFlat = async (options?: Options): Promise<File[]> => {
+    const rootPath = getObsidianVaultDirecotryPath()
     const filesTree = await getObsidianFilesTree(rootPath, options);
     return flatFilesList(filesTree);
 }
 
 export const getObsidianFilesTree = async (rootPath: string, options?: Options): Promise<Nodes> => {
     const nodeNamesInFolder = await fs.readdir(rootPath);
-
-    return (await Promise.all(nodeNamesInFolder.map(async nodeName => {
+    const files = await Promise.all(nodeNamesInFolder.map(async nodeName => {
         const nodePath = path.join(rootPath, nodeName)
         const fileInfo = await fs.lstat(nodePath)
         if (fileInfo.isFile()) {
@@ -31,10 +36,15 @@ export const getObsidianFilesTree = async (rootPath: string, options?: Options):
                 parentFolders: options?.parentFolders || []
             } as File
         } else if (fileInfo.isDirectory()) {
-            const childrens = (await getObsidianFilesTree(nodePath, { ...options, parentFolders: [...(options?.parentFolders || []), nodeName] }) || [])
+            const childrens = (await getObsidianFilesTree(nodePath, {
+                ...options,
+                parentFolders: [...(options?.parentFolders || []), nodeName] }) || []
+            )
+            
             if (!childrens.length) {
                 return null
             }
+
             return {
                 type: NodeType.Directory,
                 name: nodeName,
@@ -46,7 +56,8 @@ export const getObsidianFilesTree = async (rootPath: string, options?: Options):
         } else {
             throw new Error('Not a file, not a directory - what do you scan? :)')
         }
-    }))).filter(e => !!e) as Nodes
+    }))
+    return files.filter(e => !!e) as Nodes
 }
 
 export const flatFilesList = (rootNode: Nodes): File[] => {
