@@ -6,6 +6,8 @@ import {getObsidianFilesFlat, getFileContent} from '../../utils/obsidian/files'
 import {File} from '../../utils/obsidian/types'
 import {getUrlToFile} from '../../utils/obsidian/url'
 import markdown from 'markdown-it'
+import hljs from 'highlight.js';
+import 'highlight.js/styles/monokai.css';
 
 export type GardenProps = {
   files: File[],
@@ -39,7 +41,20 @@ export async function getStaticProps({params}: {params: {slug?: string[]}} ) {
     return fileUrl === requestedUrl
   })
   const fileContent = file? await getFileContent(file) : ''
-  const fileContentAsHtml = markdown().render(fileContent)
+  const fileContentAsHtml = markdown({
+    linkify: true,
+    highlight: function (str, lang) {
+      if (lang && hljs.getLanguage(lang)) {
+        try {
+          return '<pre class="hljs"><code>' +
+                 hljs.highlight(str, { language: lang, ignoreIllegals: true }).value +
+                 '</code></pre>';
+        } catch (__) {}
+      }
+  
+      return '<pre class="hljs"><code>' + markdown().utils.escapeHtml(str) + '</code></pre>';
+    }
+  }).render(fileContent)
   return {props: {files: filesFlat, fileContent, file: file, fileContentAsHtml}}
 }
 
