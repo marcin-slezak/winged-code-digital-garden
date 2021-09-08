@@ -1,0 +1,1 @@
+Here, during build, we copy a assets from obsidian.

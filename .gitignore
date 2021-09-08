@@ -32,8 +32,4 @@ yarn-error.log*
 
 # vercel
 .vercel
-obsidianVault/.obsidian/app.json
-obsidianVault/.obsidian/appearance.json
-obsidianVault/.obsidian/core-plugins.json
-obsidianVault/.obsidian/hotkeys.json
-obsidianVault/.obsidian/workspace
+

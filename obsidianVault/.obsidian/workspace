@@ -1,0 +1,101 @@
+{
+  "main": {
+    "id": "08c07177d41f6c50",
+    "type": "split",
+    "children": [
+      {
+        "id": "2c428a407052c1c5",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "test pages/All example elements.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e0c014c294f6d811",
+    "type": "split",
+    "children": [
+      {
+        "id": "9eb7ac0f34e71152",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b22496a744d6f5d4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "df36c8911a950128",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "bf7bc03582f174c0",
+    "type": "split",
+    "children": [
+      {
+        "id": "797e7ad256ff9382",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c4e01250c5363912",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "test pages/All example elements.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "2c428a407052c1c5",
+  "lastOpenFiles": [
+    "test pages/All example elements.md",
+    "test pages/TS/x.md",
+    "Untitled.md",
+    "test pages/TS/Untitled.md",
+    "test pages/Untitled.md",
+    "What is digital garden.md",
+    "Projects/Untitled.md",
+    "Programming/TS/Some file in ts folder.md",
+    "Programming/Some programming concept 2.md",
+    "Programming/Some programming concept 1.md"
+  ]
+}

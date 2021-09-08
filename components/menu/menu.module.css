@@ -5,8 +5,10 @@
     align-items: center;
 }
 
-.logoText {
-    font-size:33px
+.logoText a {
+    font-size:33px;
+    color:inherit;
+    text-decoration: none;
 }
 
 .linksContainer {
@@ -14,7 +16,17 @@
     margin: 0;
 }
 
+.linksContainer li a{
+    color:inherit;
+    text-decoration: none;
+}
+
+.linksContainer li:hover a{
+    text-decoration: underline;
+}
+
 .linksContainer li {
     margin: 0 1rem;
     list-style: none;
 }
+
