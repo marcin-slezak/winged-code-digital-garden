@@ -2,9 +2,8 @@ import React, { FunctionComponent } from 'react';
 import path from 'path'
 import Link from 'next/link'
 import { Layout } from '../../components/layout'
-import {getObsidianFilesFlat} from '../../utils/obsidian/files'
-import {File} from '../../utils/obsidian/types'
-import {getUrlToFile} from '../../utils/obsidian/url'
+import {obsidianNextConnection, File, } from '../../obsidian-next-connection'
+import {getUrlToFile} from '../../obsidian-next-connection/url'
 
 export type GardenProps = {
   files: File[]
@@ -24,9 +23,12 @@ const Garden: FunctionComponent<GardenProps> = ({ files }) => {
 }
 
 export async function getStaticProps({ params }: { params: { slug?: string[] } }) {
-  const obsidianDirectory = path.join(process.cwd(), 'obsidianVault')
-  const filesFlat = await getObsidianFilesFlat(obsidianDirectory, { filesExtensionToAccept: ['.md'] })
-  return { props: { files: filesFlat } }
+  const onc = obsidianNextConnection({
+    vaultPath: path.join(process.cwd(), 'obsidianVault'),
+    assetPath: path.join(process.cwd(), 'public/assets/'),
+    urlPagesPrefix: 'garden'
+  })
+  return { props: { files: await onc.getFilesFlat() } }
 }
 
 export default Garden

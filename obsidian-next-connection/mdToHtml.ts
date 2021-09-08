@@ -4,7 +4,7 @@ import hljs from 'highlight.js';
 import {File} from './types'
 import {getUrlToFile} from './url'
 
-const parseObsidianLinksPlugin = (files: File[], filesFlatMedia: File[] ) => markdownPlugin(
+const parseObsidianLinksPlugin = (files: File[], filesFlatMedia: File[], urlPagesPrefix: string ) => markdownPlugin(
     /!?\[\[(([^\]#\|]*)(#[^\|\]]+)*(\|[^\]]*)*)\]\]/,
 
     // this function will be called when something matches
@@ -13,7 +13,7 @@ const parseObsidianLinksPlugin = (files: File[], filesFlatMedia: File[] ) => mar
       const fileNameOrPath = match[1]
       const destinationFile = files.find(file => file.name ===  fileNameOrPath || `${file.parentFolders.join('/')}/${file.name}` === fileNameOrPath)
       if(destinationFile){
-          return `<a href="${getUrlToFile(destinationFile, 'garden')}">${fileNameOrPath}</a>`
+          return `<a href="${getUrlToFile(destinationFile, urlPagesPrefix)}">${fileNameOrPath}</a>`
       }
       if(isLinkToMedia){
           const file = filesFlatMedia.find(file => file.fullName === fileNameOrPath)
@@ -23,7 +23,7 @@ const parseObsidianLinksPlugin = (files: File[], filesFlatMedia: File[] ) => mar
     }
   )
 
-export const render = (fileContent: string, files: File[], filesFlatMedia: File[] ):string => markdown({
+export const render = (fileContent: string, files: File[], filesFlatMedia: File[], urlPagesPrefix: string ):string => markdown({
     linkify: true,
     highlight: function (str, lang) {
       if (lang && hljs.getLanguage(lang)) {
@@ -37,5 +37,5 @@ export const render = (fileContent: string, files: File[], filesFlatMedia: File[
       return '<pre class="hljs"><code>' + markdown().utils.escapeHtml(str) + '</code></pre>';
     }
   })
-  .use(parseObsidianLinksPlugin(files, filesFlatMedia))
+  .use(parseObsidianLinksPlugin(files, filesFlatMedia, urlPagesPrefix))
   .render(fileContent)

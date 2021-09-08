@@ -5,15 +5,14 @@ import { Directory, File, NodeType, Nodes } from './types'
 export const PAGES_FILES_EXTENSIONS = ['.md']
 export const MEDIA_FILES_EXTENSIONS = ['.png', '.svg']
 
-export const getObsidianVaultDirecotryPath = () => path.join(process.cwd(), 'obsidianVault')
+
 
 export type Options = {
     filesExtensionToAccept?: string[],
     parentFolders?: string[]
 }
 
-export const getObsidianFilesFlat = async (options?: Options): Promise<File[]> => {
-    const rootPath = getObsidianVaultDirecotryPath()
+export const getObsidianFilesFlat = async (rootPath: string, options?: Options): Promise<File[]> => {
     const filesTree = await getObsidianFilesTree(rootPath, options);
     return flatFilesList(filesTree);
 }

@@ -2,12 +2,8 @@ import React, { FunctionComponent } from 'react';
 import path from 'path'
 import { useRouter } from 'next/router'
 import { Layout } from '../../components/layout'
-import { getObsidianFilesFlat, getFileContent, MEDIA_FILES_EXTENSIONS, PAGES_FILES_EXTENSIONS, getObsidianVaultDirecotryPath } from '../../utils/obsidian/files'
-import { File } from '../../utils/obsidian/types'
-import { getUrlToFile, slugToUrl, findFileByUrl } from '../../utils/obsidian/url'
 import 'highlight.js/styles/monokai.css';
-import {render} from '../../utils/obsidian/mdToHtml'
-import {copyMediaToPublicFolder} from '../../utils/obsidian/media'
+import {obsidianNextConnection, File} from '../../obsidian-next-connection'
 
 export type GardenProps = {
   files: File[],
@@ -26,24 +22,36 @@ const Garden: FunctionComponent<GardenProps> = ({ files, file, fileContentAsHtml
   )
 }
 
+const getObsidian = () => obsidianNextConnection({
+  vaultPath: path.join(process.cwd(), 'obsidianVault'),
+  assetPath: path.join(process.cwd(), 'public/assets/'),
+  urlPagesPrefix: 'garden'
+})
 
 export async function getStaticProps({ params }: { params: { slug?: string[] } }) {
-  const filesFlatMedia = await getObsidianFilesFlat({ filesExtensionToAccept: MEDIA_FILES_EXTENSIONS })
-  await copyMediaToPublicFolder(filesFlatMedia)
-  const filesFlat = await getObsidianFilesFlat({ filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
-  const curremtFile = filesFlat.find(findFileByUrl(slugToUrl(params.slug)))
+  if(!params?.slug){
+    throw new Error('Can not find a slug for a page')
+  }
+  const onc = getObsidian()
+  await onc.prepareMediaFiles()
+  
+  const curremtFile = await onc.getFileBySlug(params.slug )
+  
   if(!curremtFile){
     throw new Error('Could not found a file for a configured slug')
   }
-  const fileContentAsHtml = render(await getFileContent(curremtFile) , filesFlat, filesFlatMedia)
-  return { props: { files: filesFlat, file: curremtFile, fileContentAsHtml } }
+
+  return { props: { 
+    files: await onc.getFilesFlat(),
+    file: curremtFile , 
+    fileContentAsHtml: await onc.getFileContentAsHtml(curremtFile)
+  } }
 }
 
 export async function getStaticPaths() {
-  const filesFlat = await getObsidianFilesFlat( { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
-  const paths = filesFlat.map(file => ({ params: { slug: getUrlToFile(file).split('/').filter(e => e) } }))
+  const onc = getObsidian()
   return {
-    paths,
+    paths: await onc.getNextPaths(),
     fallback: false
   }
 }

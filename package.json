@@ -5,8 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "ols": "ts-node --project ./tsconfig-cli.json ./cli/list-obsidian-pages.ts "
+    "start": "next start"
   },
   "dependencies": {
     "highlight.js": "^10.7.3",
