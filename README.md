@@ -18,6 +18,18 @@ This project is using [Next.js](https://nextjs.org/) framework including TypeScr
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+
+## Configuration
+
+I'm using enviroment variables. For development purposes you can create `.env` file with following content:
+
+```
+NEXT_PUBLIC_GA_TRACING_CODE=XXXXXXX
+```
+
+where: 
+- NEXT_PUBLIC_GA_TRACING_CODE - Google Analitics tracking code (optional)
+
 ## How to run application
 
 Dependencies: nodejs, npm and git.
