@@ -27,7 +27,6 @@ const renderNodes = (nodes: Nodes, level:number) => (<ol className={`${styles.ol
 </ol>)
 
 const Garden: FunctionComponent<GardenProps> = ({ nodes }) => {
-  console.log({styles}, styles[`ol${1}`])
   return (
     <Layout>
       <h1>Digital garden</h1>

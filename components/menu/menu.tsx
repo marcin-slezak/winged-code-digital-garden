@@ -3,7 +3,8 @@ import styles from './menu.module.css';
 
 export const Menu: FunctionComponent = () => <div className={styles.menuContainer}>
     <div className={styles.logoText}>
-        <a href="/">Winged Code</a>
+        <a className={styles.showBig} href="/">Winged Code</a>
+        <a className={styles.showSmall} href="/">W &#123; &#125;</a>
     </div>
     <div>
         <ul className={styles.linksContainer}>
