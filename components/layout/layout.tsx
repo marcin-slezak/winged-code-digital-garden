@@ -7,10 +7,10 @@ import { Footer } from '../footer'
 import styles from './layout.module.css';
 
 export type LayoutProps = {
-
+    fullWidth?: boolean;
 }
 
-export const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
+export const Layout: FunctionComponent<LayoutProps> = ({ children, fullWidth=false }) => {
     useEffect(() => {
         if(process.env.NEXT_PUBLIC_GA_TRACING_CODE && document.location.href !== 'http://localhost:3000/'){
           ReactGA.initialize(process.env.NEXT_PUBLIC_GA_TRACING_CODE);
@@ -32,8 +32,12 @@ export const Layout: FunctionComponent<LayoutProps> = ({ children }) => {
                 <meta name="msapplication-TileColor" content="#da532c" />
                 <meta name="theme-color" content="#ffffff" />
             </Head>
-            <div className={styles.layoutContainer}>
+            <div className={styles.menuContainer}>
+
                 <Menu />
+            </div>
+            <div className={fullWidth? styles.layoutContainerFullWidth : styles.layoutContainer}>
+                
                 {children}
                 <CookieConsent>
                     I'm using cookies on this website to understand what you are looking for the most and, eventually, improve your experience 😇

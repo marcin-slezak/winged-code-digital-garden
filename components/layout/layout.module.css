@@ -4,3 +4,13 @@
     max-width: 1000px;
     min-height: calc(100vh - 5rem);
 }
+.menuContainer {
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 2rem 0;
+}
+.layoutContainerFullWidth {
+    
+    padding: 0;
+    min-height: calc(100vh - 5rem);
+}

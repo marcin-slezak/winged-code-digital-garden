@@ -20,14 +20,27 @@ export const AnimatedText: FunctionComponent<AnimatedTextProps> = ({ text }) => 
 
             if (isRemoving) {
                 if (textLength > 0) {
-                    setTextLength(length => length - 1);
+                    setTextLength(length => {
+                        let decrement = 1
+                        while(text[textIndex].charCodeAt(length - decrement) > 127){ // handle unicode
+                            decrement++
+                        }
+                        return length - decrement
+                    });
                 } else {
                     setTextIndex(index => text[index + 1] ? index + 1 : 0);
                     setIsRemoving(false);
                 }
             } else {
                 if (textLength < text[textIndex].length) {
-                    setTextLength(length => length + 1);
+                    
+                    setTextLength(length => {
+                        let increment = 1
+                        while(text[textIndex].charCodeAt(length+increment) > 127){ // handle unicode
+                            increment++
+                        }
+                        return length + increment
+                    });
                 } else {
                     setIsRemoving(true);
                 }
@@ -39,6 +52,6 @@ export const AnimatedText: FunctionComponent<AnimatedTextProps> = ({ text }) => 
     }, [textIndex, textLength, isRemoving]);
 
     return (
-        <span className={styles.textContainer}>{text[textIndex].substr(0, textLength)}</span>
+        <span className={styles.textContainer}>{text[textIndex].substr(0, textLength)} </span>
     )
 }

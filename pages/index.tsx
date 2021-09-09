@@ -1,5 +1,4 @@
 import React, {FunctionComponent} from 'react';
-import path from 'path'
 import { Layout } from '../components/layout'
 import { AnimatedText } from '../components/animatedText'
 import { AnimatedSvg } from '../components/animatedSvg'
@@ -17,10 +16,10 @@ const Home: FunctionComponent<HomeProps> = () => {
       <div className={styles.hero}>
         <div>
           <h1>
-            Hi there 👋, I’m Marcin.
+            Hi there 👋, I’m Marcin
             <br />
             <br />
-            A <AnimatedText text={['Software developer', 'Delivery Manager']} />
+            A <AnimatedText text={['Software developer🤘', 'Delivery Manager👮‍♀️']} />
           </h1>
         </div>
         <div className={styles.heroRight}>
@@ -33,6 +32,8 @@ const Home: FunctionComponent<HomeProps> = () => {
       <Link href="/garden">
         <Button text="Digital garden"/>
       </Link>
+      
+     
     </Layout>
   )
 }

@@ -9,7 +9,7 @@ export const Menu: FunctionComponent = () => <div className={styles.menuContaine
     <div>
         <ul className={styles.linksContainer}>
             <li><a href="/garden">Digital garden</a></li>
-            <li><a href="/">Contact</a></li>
+            <li><a href="/contact">Contact</a></li>
         </ul>
     </div>
 </div>

@@ -1,0 +1,28 @@
+.map {
+    background-image: url("/img/map.svg");
+    height: 1850px;
+    background-repeat:no-repeat;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: 1015px) {
+    .map {
+        background-image: url("/img/map-mini.svg");
+        background-size: contain;
+        height: 1000px;
+
+    }
+}
+
+
+@media (max-width: 550px) {
+    .map {
+        background-image: url("/img/map-mini.svg");
+        background-size: contain;
+        height: 1500px;
+
+    }
+}
