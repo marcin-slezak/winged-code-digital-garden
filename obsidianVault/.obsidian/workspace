@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "test pages/All example elements 1 1 1.md",
+            "file": "Design and graphic/Generating favicons most for most of devices and browser in 5 minutes.md",
             "mode": "source"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 496
   },
   "right": {
     "id": "bf7bc03582f174c0",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test pages/All example elements 1 1 1.md",
+                "file": "Design and graphic/Generating favicons most for most of devices and browser in 5 minutes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,6 +87,7 @@
   },
   "active": "2c428a407052c1c5",
   "lastOpenFiles": [
+    "Design and graphic/Untitled.md",
     "test pages/All example elements 1 1 1.md",
     "test pages/All example elements 1 1.md",
     "test pages/All example elements 1.md",
@@ -95,7 +96,6 @@
     "What is digital garden 1 1 1 1.md",
     "What is digital garden 1 1 1.md",
     "What is digital garden 1 1.md",
-    "What is digital garden 1.md",
-    "x.md"
+    "What is digital garden 1.md"
   ]
 }

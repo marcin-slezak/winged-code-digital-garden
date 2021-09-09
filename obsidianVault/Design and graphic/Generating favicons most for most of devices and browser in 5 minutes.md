@@ -1,0 +1,1 @@
+If you have the image then you can quickly convert it to favicons files and generate html tags to your head section using: https://realfavicongenerator.net/
