@@ -39,3 +39,7 @@
     flex-direction: column;
     justify-content: flex-end
 }
+
+.animated { 
+    white-space: nowrap;
+}

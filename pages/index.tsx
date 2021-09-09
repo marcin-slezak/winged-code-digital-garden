@@ -19,7 +19,7 @@ const Home: FunctionComponent<HomeProps> = () => {
             Hi there 👋, I’m Marcin
             <br />
             <br />
-            A <AnimatedText text={['Software developer🤘', 'Delivery Manager👮‍♀️']} />
+            <span className={styles.animated}>A <AnimatedText text={['Software developer🤘', 'Delivery Manager👮‍♀️']} /></span>
           </h1>
         </div>
         <div className={styles.heroRight}>

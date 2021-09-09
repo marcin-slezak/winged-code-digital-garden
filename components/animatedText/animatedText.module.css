@@ -2,6 +2,7 @@
     border-right: solid 4px black;
     animation: blink 1.5s;
     animation-iteration-count:infinite;
+    white-space: nowrap;
 }
 
 @keyframes blink { 50% { border-color: white; }  }
