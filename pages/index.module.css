@@ -13,8 +13,12 @@
     margin-right: 2rem;
 }
 
+.mainText { margin-bottom: 3rem;}
+
 
 @media (max-width: 800px) {
+    .mainText { margin-bottom: 2rem;}
+
     .heroRight {
         display: none;
     }
@@ -25,4 +29,13 @@
         width: auto;
     }
     
+}
+
+
+.container404 { 
+    text-align: center;
+    height:40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end
 }

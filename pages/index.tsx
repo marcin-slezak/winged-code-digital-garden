@@ -27,7 +27,7 @@ const Home: FunctionComponent<HomeProps> = () => {
           <AnimatedSvg />
         </div>
       </div>
-      <p>
+      <p className={styles.mainText}>
         I fell in love with software development many years ago. After a few dozens of projects made for someone over that time, I finally created my own disorganised and chaotic piece of the Internet. So I drop here notes, articles, news and some of my thoughts about programming and software development management.
       </p>
       <Link href="/garden">
