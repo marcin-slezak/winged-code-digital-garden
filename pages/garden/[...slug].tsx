@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { Layout } from '../../components/layout'
 import 'highlight.js/styles/monokai.css';
 import {obsidianNextConnection, File} from '../../obsidian-next-connection'
+import styles from './index.module.css';
 
 export type GardenProps = {
   files: File[],
@@ -16,7 +17,7 @@ const Garden: FunctionComponent<GardenProps> = ({ files, file, fileContentAsHtml
   const { slug } = router.query
   return (
     <Layout>
-      <div dangerouslySetInnerHTML={{ __html: fileContentAsHtml || '' }} ></div>
+      <div className={styles.markdownContainer} dangerouslySetInnerHTML={{ __html: fileContentAsHtml || '' }} ></div>
     </Layout>
   )
 }

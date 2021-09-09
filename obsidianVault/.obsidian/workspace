@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "test pages/All example elements.md",
+            "file": "test pages/All example elements 1 1 1.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "test pages/All example elements.md",
+                "file": "test pages/All example elements 1 1 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +87,15 @@
   },
   "active": "2c428a407052c1c5",
   "lastOpenFiles": [
+    "test pages/All example elements 1 1 1.md",
+    "test pages/All example elements 1 1.md",
+    "test pages/All example elements 1.md",
     "test pages/All example elements.md",
-    "test pages/TS/x.md",
-    "Untitled.md",
-    "test pages/TS/Untitled.md",
-    "test pages/Untitled.md",
-    "What is digital garden.md",
-    "Projects/Untitled.md",
-    "Programming/TS/Some file in ts folder.md",
-    "Programming/Some programming concept 2.md",
-    "Programming/Some programming concept 1.md"
+    "What is digital garden 1 1 1 1 1.md",
+    "What is digital garden 1 1 1 1.md",
+    "What is digital garden 1 1 1.md",
+    "What is digital garden 1 1.md",
+    "What is digital garden 1.md",
+    "x.md"
   ]
 }

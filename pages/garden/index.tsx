@@ -19,21 +19,20 @@ const sortList = (a: File | Directory, b: File | Directory) => {
   return a.name.localeCompare(b.name)
 }
 
-const renderNodes = (nodes: Nodes) => (<ol className={styles.ol}>
-  {nodes.sort(sortList).map(node => <li key={node.path} className={styles.li}>
-    {node.type === NodeType.File? <Link href={getUrlToFile(node, 'garden')}>{node.name}</Link> : <span>{node.name}</span>}
-    {node.type === NodeType.Directory? renderNodes(node.childrens):null}
+const renderNodes = (nodes: Nodes, level:number) => (<ol className={`${styles.ol} ${styles[`ol${level}`]}`}>
+  {nodes.sort(sortList).map(node => <li key={`${node.path}/${node.fullName}`} className={styles.li}>
+    {node.type === NodeType.File? <Link href={getUrlToFile(node, 'garden')}><a className={styles.a} >{node.name}</a></Link> : <span>{node.name}</span>}
+    {node.type === NodeType.Directory? renderNodes(node.childrens, level+1):null}
   </li>)}
 </ol>)
 
 const Garden: FunctionComponent<GardenProps> = ({ nodes }) => {
-
+  console.log({styles}, styles[`ol${1}`])
   return (
     <Layout>
       <h1>Digital garden</h1>
-      <p>Enjoy my collection ...</p>
-      
-      {renderNodes(nodes)}
+            
+      {renderNodes(nodes, 0)}
       
     </Layout>
   )
