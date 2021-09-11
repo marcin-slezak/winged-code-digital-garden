@@ -1,11 +1,23 @@
+.homePage{
+
+    min-height: calc(100vh - 15rem);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+
+}
 .hero {
     display: flex;
     align-items: center;
-    margin: 6rem 0;
+    margin: 1rem 0;
     justify-content: space-between;
 }
 
-.hero > * {
+.heroLeft {
+    width: 55%;
+}
+
+.heroRight {
     width: 45%;
 }
 
@@ -40,6 +52,3 @@
     justify-content: flex-end
 }
 
-.animated { 
-    white-space: nowrap;
-}

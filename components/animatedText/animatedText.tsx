@@ -52,6 +52,9 @@ export const AnimatedText: FunctionComponent<AnimatedTextProps> = ({ text }) => 
     }, [textIndex, textLength, isRemoving]);
 
     return (
-        <span className={styles.textContainer}>{text[textIndex].substr(0, textLength)} </span>
+        <span>
+            <span className={styles.textContainer}>{text[textIndex].substr(0, textLength)}</span>
+            <span className={styles.textContainerEnd}>{text[textIndex].substr(textLength)}</span>
+        </span>
     )
 }

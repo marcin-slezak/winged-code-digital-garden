@@ -10,7 +10,7 @@
 
 @media (max-width: 600px) {
     .container {
-        margin: 6px;
+        margin: 16px;
         padding: 25px;
     }
 }

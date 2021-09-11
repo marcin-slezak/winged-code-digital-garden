@@ -8,6 +8,10 @@
     align-items: flex-start;
 }
 
+.contactMessage {
+    padding: 2rem 0 2rem;
+}
+
 @media (max-width: 1015px) {
     .map {
         background-image: url("/img/map-mini.svg");

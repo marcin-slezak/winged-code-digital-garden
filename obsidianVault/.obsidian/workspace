@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "2c428a407052c1c5",
+        "id": "7346ce278922b9dd",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Design and graphic/Generating favicons most for most of devices and browser in 5 minutes.md",
+            "file": "Projects/Digital garden/test elements.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Design and graphic/Generating favicons most for most of devices and browser in 5 minutes.md",
+                "file": "Projects/Digital garden/test elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,17 +85,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "2c428a407052c1c5",
+  "active": "7346ce278922b9dd",
   "lastOpenFiles": [
-    "Design and graphic/Untitled.md",
-    "test pages/All example elements 1 1 1.md",
-    "test pages/All example elements 1 1.md",
-    "test pages/All example elements 1.md",
-    "test pages/All example elements.md",
-    "What is digital garden 1 1 1 1 1.md",
-    "What is digital garden 1 1 1 1.md",
-    "What is digital garden 1 1 1.md",
-    "What is digital garden 1 1.md",
-    "What is digital garden 1.md"
+    "Projects/Digital garden/test elements.md",
+    "Projects/Digital garden/Digital garden.md",
+    "Projects/Digital garden/All example elements.md",
+    "Projects/Digital garden/Untitled.md",
+    "Projects/Digital garden.md",
+    "Books/The Power Of Your Subconscious Mind - Joseph Murphy.md",
+    "Books/Blood, Sweat, and Pixels - Jason Schreier.md",
+    "Books/Untitled.md",
+    "Books/The Power Of Your Subconscious Mind.md",
+    "Books/Blood, Sweat, and Pixels.md"
   ]
 }

@@ -2,7 +2,7 @@
     margin: auto;
     padding: 0 2rem 2rem;
     max-width: 1000px;
-    min-height: calc(100vh - 5rem);
+    min-height: calc(100vh - 12rem);
 }
 .menuContainer {
     max-width: 1000px;

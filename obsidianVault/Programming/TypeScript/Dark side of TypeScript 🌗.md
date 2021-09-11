@@ -1,0 +1,3 @@
+Remember, before you decide to add TypeScript to an existing project - it's an additional layer on top of JavaScript. Sometimes it may be not so straight forward as you expect. I have three projects in a configuration expressjs + nextjs (SSR), and in one of them, ts-node made our application six times slower and still have not figured out why 😢. 
+
+Don't take me wrong - I love TS, but it's just a tool that also has some disadvantages.

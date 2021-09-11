@@ -3,7 +3,6 @@ import { Layout } from '../../components/layout'
 import { Pane } from '../../components/pane'
 import { Button } from '../../components/button'
 import styles from './index.module.css'
-import Link from 'next/link'
 
 export type ContactProps = {
 
@@ -14,9 +13,9 @@ const Contact: FunctionComponent<ContactProps> = () => {
     <Layout fullWidth={true}>
       <div className={styles.map}>
        <Pane>
-        <h2>Want's to work with me?</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi blandit diam vel ultrices blandit. Etiam quis nibh mattis, faucibus leo non, interdum ligula. Duis aliquet tincidunt risus nec auctor. Duis ac sapien porttitor, hendrerit mauris lacinia, blandit ante. Praesent luctus neque diam, ut elementum eros mattis sit amet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed gravida ut orci et malesuada. Nam sapien ligula, cursus in risus nec, ullamcorper varius libero. Sed eu neque leo. Sed scelerisque cursus felis non imperdiet. Cras urna turpis, auctor vitae mattis nec, dictum nec erat. Nullam ultrices risus tellus, sed fringilla enim mollis quis. Donec tincidunt nec quam nec auctor.</p>
-        <a href="/garden">
+        <h2>Let's talk 💬</h2>
+        <p className={styles.contactMessage}>I love meeting new people, even more, listen to their stories, wins, and the challenges they are facing. Each new story teaches me something new, and sometimes I can help in exchange 😇. If you have questions, even the stupidest ones, just write. Work and family take almost all my time, so please note that it can take a while to reply. ⏳</p>
+        <a href="https://pl.linkedin.com/in/marcin-%C5%9Bl%C4%99zak-29223a55">
           <Button text="Get in touch on LinkedIn"/>
         </a>
       </Pane>
