@@ -17,6 +17,7 @@ const Garden: FunctionComponent<GardenProps> = ({ files, file, fileContentAsHtml
   const { slug } = router.query
   return (
     <Layout>
+      <h1>{file.name}</h1>
       <div className={styles.markdownContainer} dangerouslySetInnerHTML={{ __html: fileContentAsHtml || '' }} ></div>
     </Layout>
   )

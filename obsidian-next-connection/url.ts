@@ -2,10 +2,7 @@ import { File } from './types'
 
 export const encodeString = (s:string):string => encodeURIComponent(
         s.toLocaleLowerCase()
-        .replace(/\s/g, "-")
-        .replace(/\?/g, "")
-        .replace(/\,/g, "")
-        .replace(/\./g, "")
+        .replace(/[^a-zA-Z0-6]/g, "-")
         // https://github.com/vercel/next.js/issues/11016
         // Nextjs does not like encoded string so get rid off as much as we can
     )

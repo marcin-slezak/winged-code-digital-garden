@@ -4,14 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7346ce278922b9dd",
+        "id": "80507958e8663e55",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Projects/Digital garden/test elements.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -68,7 +65,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Digital garden/test elements.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -85,17 +81,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "7346ce278922b9dd",
+  "active": "80507958e8663e55",
   "lastOpenFiles": [
+    "Programming/TypeScript/Dark side of TypeScript 🌗.md",
+    "Programming/TypeScript/Untitled.md",
+    "Programming/TypeScript/React and TypeScript.md",
+    "Programming/Frontend/Untitled.md",
+    "Programming/Technical debt ☠️.md",
+    "Management/Pomodoro 🍅  as productivity hack?.md",
+    "Management/Write technical documentation which you would like to read yourself.md",
     "Projects/Digital garden/test elements.md",
-    "Projects/Digital garden/Digital garden.md",
-    "Projects/Digital garden/All example elements.md",
-    "Projects/Digital garden/Untitled.md",
-    "Projects/Digital garden.md",
-    "Books/The Power Of Your Subconscious Mind - Joseph Murphy.md",
-    "Books/Blood, Sweat, and Pixels - Jason Schreier.md",
-    "Books/Untitled.md",
-    "Books/The Power Of Your Subconscious Mind.md",
-    "Books/Blood, Sweat, and Pixels.md"
+    "Programming/Untitled.md",
+    "Management/Online retrospective meetings.md"
   ]
 }
