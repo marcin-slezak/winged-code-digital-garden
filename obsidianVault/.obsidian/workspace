@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Programming/⌨️ Visual Studio Code plugins.md",
+            "file": "Programming/🍿 Automate deploy via FTP.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/⌨️ Visual Studio Code plugins.md",
+                "file": "Programming/🍿 Automate deploy via FTP.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +87,15 @@
   },
   "active": "cb6191f53f35256a",
   "lastOpenFiles": [
+    "Programming/Automate deploy via FTP.md",
+    "Programming/TypeScript/👮‍♀️ React and TypeScript.md",
+    "Programming/Frontend/💿 Recoil vs Redux.md",
+    "Programming/⌨️ Visual Studio Code plugins.md",
     "Programming/Untitled.md",
     "Projects/Digital garden/🧪 test elements.md",
     "Projects/Digital garden/test elements.md",
     "Programming/JavaScript/🧠 Better code.md",
     "Projects/Digital garden/Digital garden.md",
-    "Programming/Chargebee - how to build own subscriptions base product faster.md",
-    "Programming/TypeScript/Why use TypeScript (from perspective of experienced dynamically-typed languages developer)?.md",
-    "Programming/TypeScript/React and TypeScript.md",
-    "Programming/JavaScript/Better code.md",
-    "Programming/Frontend/Why use Next.js?.md"
+    "Programming/Chargebee - how to build own subscriptions base product faster.md"
   ]
 }

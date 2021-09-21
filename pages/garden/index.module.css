@@ -1,5 +1,5 @@
-.ol0 {  font-size: 1.5rem; }
-.ol1 {  font-size: 1rem; margin: 1rem 2rem; }
+.ol0 {  font-size: 1.3rem; }
+.ol1 {  font-size: 1rem; margin: 1rem 0rem; }
 .ol2 {  font-size: 1rem; margin: 1rem 2rem}
 
 .ol { padding: 0; list-style: none;}
@@ -19,4 +19,23 @@
         width: 100%;
         height: auto
     }
+}
+
+.breadcrumb {
+    color: gray;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 0.8rem;
+}
+
+.breadcrumb li:not(:last-of-type){
+    margin-right: 0.5rem;
+}
+
+
+.breadcrumb li:not(:last-of-type)::after{
+    content: ">";
+    margin-left: 0.5rem;
 }

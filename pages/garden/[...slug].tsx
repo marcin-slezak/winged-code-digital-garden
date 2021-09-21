@@ -2,8 +2,9 @@ import React, { FunctionComponent } from 'react';
 import path from 'path'
 import { useRouter } from 'next/router'
 import { Layout } from '../../components/layout'
+import Link from 'next/link'
 import 'highlight.js/styles/monokai.css';
-import {obsidianNextConnection, File} from '../../obsidian-next-connection'
+import { obsidianNextConnection, File } from '../../obsidian-next-connection'
 import styles from './index.module.css';
 
 export type GardenProps = {
@@ -14,9 +15,16 @@ export type GardenProps = {
 
 const Garden: FunctionComponent<GardenProps> = ({ files, file, fileContentAsHtml }) => {
   const router = useRouter()
+  const breadcrumbs: { url: string | null, label: string }[] = [
+    { url: '/garden', label: 'Digital garden' },
+    ...file.parentFolders.map(pf => ({ url: null, label: pf }))
+  ]
   const { slug } = router.query
   return (
     <Layout>
+      <ol className={styles.breadcrumb}>
+        {breadcrumbs.map(bc => <li key={bc.label}>{bc.url? <Link href={bc.url}>{bc.label}</Link>: bc.label }</li>)}
+      </ol>
       <h1>{file.name}</h1>
       <div className={styles.markdownContainer} dangerouslySetInnerHTML={{ __html: fileContentAsHtml || '' }} ></div>
     </Layout>
@@ -30,23 +38,25 @@ const getObsidian = () => obsidianNextConnection({
 })
 
 export async function getStaticProps({ params }: { params: { slug?: string[] } }) {
-  if(!params?.slug){
+  if (!params?.slug) {
     throw new Error('Can not find a slug for a page')
   }
   const onc = getObsidian()
   await onc.prepareMediaFiles()
-  
-  const curremtFile = await onc.getFileBySlug(params.slug )
-  
-  if(!curremtFile){
+
+  const curremtFile = await onc.getFileBySlug(params.slug)
+
+  if (!curremtFile) {
     throw new Error('Could not found a file for a configured slug')
   }
 
-  return { props: { 
-    files: await onc.getFilesFlat(),
-    file: curremtFile , 
-    fileContentAsHtml: await onc.getFileContentAsHtml(curremtFile)
-  } }
+  return {
+    props: {
+      files: await onc.getFilesFlat(),
+      file: curremtFile,
+      fileContentAsHtml: await onc.getFileContentAsHtml(curremtFile)
+    }
+  }
 }
 
 export async function getStaticPaths() {
