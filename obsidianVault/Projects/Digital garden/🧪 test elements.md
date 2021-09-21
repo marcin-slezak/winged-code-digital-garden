@@ -120,4 +120,4 @@ Link to local png:
 
 Link to other page in the garden
 
-[[Digital garden]]
+[[🪴 Digital garden]]
