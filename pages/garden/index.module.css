@@ -39,3 +39,56 @@
     content: ">";
     margin-left: 0.5rem;
 }
+
+
+.markdownContainer blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 0;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  .markdownContainer blockquote:before {
+    color: #ccc;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+  .markdownContainer blockquote p {
+    display: inline;
+  }
+
+
+  .markdownContainer table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.markdownContainer table thead tr {
+    background-color: darkgrey;
+    color: #ffffff;
+    text-align: left;
+}
+
+.markdownContainer table th,
+.markdownContainer table td {
+    padding: 12px 15px;
+}
+
+.markdownContainer table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.markdownContainer table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.markdownContainer table tbody tr:last-of-type {
+    border-bottom: 2px solid darkgrey;
+}
