@@ -5,7 +5,7 @@
 ##### Head 5
 ###### Head 6
 
-List of elements
+## List of elements
 - one
 - two
 - three
@@ -13,6 +13,7 @@ List of elements
 	* three and two
 - four
 
+## Text
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ipsum orci, eu porttitor odio luctus sed. Phasellus quis orci enim. Nam at iaculis eros. Integer quis pretium purus. Fusce non nunc vitae orci finibus tempor in ut massa. Fusce pellentesque sapien consectetur turpis euismod, et lobortis mauris posuere. Etiam porta elementum tincidunt. Vivamus et ornare ipsum, at dapibus ante. Curabitur urna erat, feugiat eget ex sit amet, egestas congue nisi. Sed laoreet metus nec odio elementum, eget facilisis enim auctor. Mauris velit libero, euismod non sapien vitae, rutrum finibus nisi. Nullam eu metus in mi mollis vulputate quis sit amet augue. Sed nec aliquet metus, eu egestas erat. Maecenas at nisi vulputate tortor facilisis elementum ut in ex. Maecenas nec rutrum ipsum, ac rhoncus mi.
 
 
@@ -25,20 +26,20 @@ a ~~strikethrough~~ element
 
 this is :smile: smile emoji
 
-Ordered list
+## Ordered list
 
 
 1. Item 1
 2. Item 2
 3. Item 3
 
-Tasks list
+## Tasks list
 
 
 - [x] checked list item
 - [ ] unchecked list item
 
-Nested blocks
+## Nested blocks
 
 
 1.  This is a list item with two paragraphs. Lorem ipsum dolor
@@ -60,7 +61,7 @@ standard markdown link:
 
 [Get Showdown!](https://github.com/showdownjs/showdown)
 
-Tables:
+## Table
 
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -68,6 +69,10 @@ Tables:
 | col 2 is      | *centered*    |   $12 |
 | zebra stripes | ~~are neat~~  |    $1 |
 
+## Quote
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sodales ipsum orci, eu porttitor odio luctus sed. Phasellus quis orci enim. Nam at iaculis eros. Integer quis pretium purus. Fusce non nunc vitae orci finibus tempor in ut massa. Fusce pellentesque sapien consectetur turpis euismod, et lobortis mauris posuere. Etiam porta elementum tincidunt. Vivamus et ornare ipsum, at dapibus ante. Curabitur urna erat, feugiat eget ex sit amet, egestas congue nisi. Sed laoreet metus nec odio elementum, eget facilisis enim auctor. Mauris velit libero, euismod non sapien vitae, rutrum finibus nisi. Nullam eu metus in mi mollis vulputate quis sit amet augue. Sed nec aliquet metus, eu egestas erat. Maecenas at nisi vulputate tortor facilisis elementum ut in ex. Maecenas nec rutrum ipsum,
+
+## Code
 
 Some text as md:
 
@@ -109,6 +114,8 @@ export const addUser(user:UserInput): Promise<User> = {
 ```
 
 
+## Links
+
 Link to local svg:
 
 ![[undraw_Gardening_eaf3.svg]]
@@ -121,3 +128,5 @@ Link to local png:
 Link to other page in the garden
 
 [[🪴 Digital garden]]
+
+

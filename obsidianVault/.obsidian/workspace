@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Programming/🍿 Automate deploy via FTP.md",
+            "file": "News from the world/🎥 Slack launches clips.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/🍿 Automate deploy via FTP.md",
+                "file": "News from the world/🎥 Slack launches clips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +87,15 @@
   },
   "active": "cb6191f53f35256a",
   "lastOpenFiles": [
+    "News from the world/🎥 Slack launches clips.md",
+    "Projects/Digital garden/🧪 test elements.md",
+    "News from the world/Untitled.md",
+    "Programming/🍿 Automate deploy via FTP.md",
     "Programming/Automate deploy via FTP.md",
     "Programming/TypeScript/👮‍♀️ React and TypeScript.md",
     "Programming/Frontend/💿 Recoil vs Redux.md",
     "Programming/⌨️ Visual Studio Code plugins.md",
     "Programming/Untitled.md",
-    "Projects/Digital garden/🧪 test elements.md",
-    "Projects/Digital garden/test elements.md",
-    "Programming/JavaScript/🧠 Better code.md",
-    "Projects/Digital garden/Digital garden.md",
-    "Programming/Chargebee - how to build own subscriptions base product faster.md"
+    "Projects/Digital garden/test elements.md"
   ]
 }
