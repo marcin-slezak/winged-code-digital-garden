@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "News from the world/🎥 Slack launches clips.md",
+            "file": "Programming/🙈 Redux - test automation.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "News from the world/🎥 Slack launches clips.md",
+                "file": "Programming/🙈 Redux - test automation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +87,15 @@
   },
   "active": "cb6191f53f35256a",
   "lastOpenFiles": [
-    "News from the world/🎥 Slack launches clips.md",
+    "Programming/🙈 Redux - test automation.md",
     "Projects/Digital garden/🧪 test elements.md",
+    "Programming/Untitled.md",
+    "Projects/Digital garden/🪴 Digital garden.md",
+    "Programming/🕸 About architecture.md",
+    "Programming/🧠 Better code.md",
+    "News from the world/🎥 Slack launches clips.md",
     "News from the world/Untitled.md",
     "Programming/🍿 Automate deploy via FTP.md",
-    "Programming/Automate deploy via FTP.md",
-    "Programming/TypeScript/👮‍♀️ React and TypeScript.md",
-    "Programming/Frontend/💿 Recoil vs Redux.md",
-    "Programming/⌨️ Visual Studio Code plugins.md",
-    "Programming/Untitled.md",
-    "Projects/Digital garden/test elements.md"
+    "Programming/Automate deploy via FTP.md"
   ]
 }
