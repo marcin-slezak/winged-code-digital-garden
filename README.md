@@ -26,11 +26,17 @@ I'm using enviroment variables. For development purposes you can create `.env` f
 ```
 NEXT_PUBLIC_GA_TRACING_CODE=XXXXXXX
 NEXT_PUBLIC_DOMAIN=https://wingedcode.com
+FTP_HOST=xxx
+FTP_USER=xxx
+FTP_PASSWORD=xxx
 ```
 
 where: 
 - NEXT_PUBLIC_GA_TRACING_CODE - Google Analitics tracking code (optional)
 - NEXT_PUBLIC_DOMAIN - domain that will be used to generate sitemap.xml (optional)
+- FTP_HOST - ftps server address, used to deploy generated website to dump server via ftp (optional)
+- FTP_USER - ftp user (optional)
+- FTP_PASSWORD - ftp password (optional)
 
 ## How to run application
 

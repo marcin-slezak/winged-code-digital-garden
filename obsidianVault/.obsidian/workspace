@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Projects/Digital garden/🧪 test elements.md",
+            "file": "Programming/Apache htaccess rules for a dump server.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Digital garden/🧪 test elements.md",
+                "file": "Programming/Apache htaccess rules for a dump server.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,11 +87,11 @@
   },
   "active": "cb6191f53f35256a",
   "lastOpenFiles": [
+    "Programming/Untitled.md",
+    "Projects/Digital garden/🪴 Digital garden.md",
     "Projects/Digital garden/🧪 test elements.md",
     "Programming/🔌 Apollo Client Devtools.md",
-    "Programming/Untitled.md",
     "Programming/🙈 Redux - test automation.md",
-    "Projects/Digital garden/🪴 Digital garden.md",
     "Programming/🕸 About architecture.md",
     "Programming/🧠 Better code.md",
     "News from the world/🎥 Slack launches clips.md",
