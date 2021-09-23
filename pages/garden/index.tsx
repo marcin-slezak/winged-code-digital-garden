@@ -6,6 +6,8 @@ import {obsidianNextConnection } from '../../obsidian-next-connection'
 import { Nodes, NodeType, File, Directory } from '../../obsidian-next-connection/types'
 import {getUrlToFile} from '../../obsidian-next-connection/url'
 import styles from './index.module.css'
+import {prepareSitemapFile} from '../../sitemap'
+
 export type GardenProps = {
   nodes: Nodes
 }
@@ -43,6 +45,11 @@ export async function getStaticProps({ params }: { params: { slug?: string[] } }
     assetPath: path.join(process.cwd(), 'public/assets/'),
     urlPagesPrefix: 'garden'
   })
+
+  if(process.env.NEXT_PUBLIC_DOMAIN){
+    await prepareSitemapFile(process.env.NEXT_PUBLIC_DOMAIN, path.join(process.cwd(), 'public'), await onc.getFilesFlat())
+  }
+
   return { props: { nodes: await onc.getFilesTree() } }
 }
 

@@ -1,3 +1,13 @@
+---
+layout: post
+some-unicode: 🚀👂😁🧨🎸
+published-on: 1 January 2000
+title: Blogging Like a Boss
+tags:
+  - one
+  - two
+---
+
 # Head 1
 ## Head 2
 ### Head 3
@@ -128,5 +138,3 @@ Link to local png:
 Link to other page in the garden
 
 [[🪴 Digital garden]]
-
-

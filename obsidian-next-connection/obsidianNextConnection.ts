@@ -21,7 +21,7 @@ export const obsidianNextConnection = ({vaultPath, assetPath, urlPagesPrefix}: O
         const filesFlat = await getObsidianFilesFlat(vaultPath,  { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
         return filesFlat.find(findFileByUrl(slugToUrl(slug))) || null
     } 
-    const getFileContentAsHtml = async (file:File): Promise<string> => {
+    const getFileContentAsHtml = async (file:File): Promise<{document: string, meta: any}> => {
         const filesFLat =  await getObsidianFilesFlat(vaultPath,  { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
         const filesFlatMedia = await getObsidianFilesFlat(vaultPath, { filesExtensionToAccept: MEDIA_FILES_EXTENSIONS })
         return render(await getFileContent(file), filesFLat, filesFlatMedia, urlPagesPrefix)

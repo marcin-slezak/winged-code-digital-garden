@@ -1,4 +1,4 @@
-As usual, truth is somewhere in the middle. Projects are extremely different. Small bug in spaceship flight control unit can cost millions of dollars or lives of many people. For a startup in the early stages, wild experiments to get traction are much more valuable than perfection. Often, in one projects we have both extremes and as pragmatic programmers, we should adapt our approach to maximalize benefits.
+ As usual, truth is somewhere in the middle. Projects are extremely different. Small bug in spaceship flight control unit can cost millions of dollars or lives of many people. For a startup in the early stages, wild experiments to get traction are much more valuable than perfection. Often, in one projects we have both extremes and as pragmatic programmers, we should adapt our approach to maximalize benefits.
 
   
 

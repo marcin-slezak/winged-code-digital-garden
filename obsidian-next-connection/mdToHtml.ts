@@ -1,5 +1,6 @@
 import markdown from 'markdown-it'
 import markdownPlugin from 'markdown-it-regexp'
+import markdownMeta from 'markdown-it-meta'
 import hljs from 'highlight.js';
 import {File} from './types'
 import {getUrlToFile} from './url'
@@ -23,7 +24,8 @@ const parseObsidianLinksPlugin = (files: File[], filesFlatMedia: File[], urlPage
     }
   )
 
-export const render = (fileContent: string, files: File[], filesFlatMedia: File[], urlPagesPrefix: string ):string => markdown({
+export const render = (fileContent: string, files: File[], filesFlatMedia: File[], urlPagesPrefix: string ):{document: string, meta: any} => {
+  const md = markdown({
     linkify: true,
     highlight: function (str, lang) {
       if (lang && hljs.getLanguage(lang)) {
@@ -38,4 +40,10 @@ export const render = (fileContent: string, files: File[], filesFlatMedia: File[
     }
   })
   .use(parseObsidianLinksPlugin(files, filesFlatMedia, urlPagesPrefix))
-  .render(fileContent)
+  .use(markdownMeta)
+  
+  const document = md.render(fileContent)
+  
+
+  return {document, meta: (md as unknown as {meta:any}).meta }
+}

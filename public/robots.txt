@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: 'https://wingedcode.com/sitemap.xml'

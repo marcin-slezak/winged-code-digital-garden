@@ -6,14 +6,14 @@ import Link from 'next/link'
 import 'highlight.js/styles/monokai.css';
 import { obsidianNextConnection, File } from '../../obsidian-next-connection'
 import styles from './index.module.css';
-
 export type GardenProps = {
   files: File[],
   file: File,
-  fileContentAsHtml?: string
+  fileContentAsHtml?: string,
+  meta: any
 }
 
-const Garden: FunctionComponent<GardenProps> = ({ files, file, fileContentAsHtml }) => {
+const Garden: FunctionComponent<GardenProps> = ({ meta, files, file, fileContentAsHtml }) => {
   const router = useRouter()
   const breadcrumbs: { url: string | null, label: string }[] = [
     { url: '/garden', label: 'Digital garden' },
@@ -43,18 +43,21 @@ export async function getStaticProps({ params }: { params: { slug?: string[] } }
   }
   const onc = getObsidian()
   await onc.prepareMediaFiles()
-
+  
   const curremtFile = await onc.getFileBySlug(params.slug)
 
   if (!curremtFile) {
     throw new Error('Could not found a file for a configured slug')
   }
 
+  const {document, meta} = await onc.getFileContentAsHtml(curremtFile)
+
   return {
     props: {
+      meta,
       files: await onc.getFilesFlat(),
       file: curremtFile,
-      fileContentAsHtml: await onc.getFileContentAsHtml(curremtFile)
+      fileContentAsHtml: document,
     }
   }
 }
