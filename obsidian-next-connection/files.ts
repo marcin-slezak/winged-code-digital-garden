@@ -9,7 +9,8 @@ export const MEDIA_FILES_EXTENSIONS = ['.png', '.svg']
 
 export type Options = {
     filesExtensionToAccept?: string[],
-    parentFolders?: string[]
+    parentFolders?: string[],
+    ignoreFolders?: string[]
 }
 
 export const getObsidianFilesFlat = async (rootPath: string, options?: Options): Promise<File[]> => {
@@ -21,6 +22,10 @@ export const getObsidianFilesTree = async (rootPath: string, options?: Options):
     const nodeNamesInFolder = await fs.readdir(rootPath);
     const files = await Promise.all(nodeNamesInFolder.map(async nodeName => {
         const nodePath = path.join(rootPath, nodeName)
+        if(Array.isArray(options?.ignoreFolders) &&  options?.ignoreFolders.includes((options?.parentFolders || []).join('/')) ){
+            return null
+        }
+        
         const fileInfo = await fs.lstat(nodePath)
         if (fileInfo.isFile()) {
             const isNotAcceptedExtension = options?.filesExtensionToAccept?.length && !options.filesExtensionToAccept.includes(path.extname(nodeName))

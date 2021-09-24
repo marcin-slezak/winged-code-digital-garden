@@ -9,7 +9,14 @@
 }
 
 .contactMessage {
-    padding: 2rem 0 2rem;
+    padding: 2rem 0 0;
+}
+.contactMessageSign {
+    text-align: right;
+    padding: 0 0 2rem;
+    font-style: italic;
+    color: darkgrey;
+
 }
 
 @media (max-width: 1015px) {

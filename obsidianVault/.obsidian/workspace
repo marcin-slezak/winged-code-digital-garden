@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Programming/Apache htaccess rules for a dump server.md",
+            "file": "WIP/What good to know.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/Apache htaccess rules for a dump server.md",
+                "file": "WIP/What good to know.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +87,15 @@
   },
   "active": "cb6191f53f35256a",
   "lastOpenFiles": [
-    "Programming/Untitled.md",
-    "Projects/Digital garden/🪴 Digital garden.md",
+    "Private/What good to know.md",
+    "Private/Untitled.md",
+    "Projects/Digital garden/🌹 Digital garden.md",
     "Projects/Digital garden/🧪 test elements.md",
+    "Projects/Digital garden/🪴 Digital garden.md",
+    "Programming/Apache htaccess rules for a dump server.md",
+    "Programming/Untitled.md",
     "Programming/🔌 Apollo Client Devtools.md",
     "Programming/🙈 Redux - test automation.md",
-    "Programming/🕸 About architecture.md",
-    "Programming/🧠 Better code.md",
-    "News from the world/🎥 Slack launches clips.md",
-    "News from the world/Untitled.md",
-    "Programming/🍿 Automate deploy via FTP.md"
+    "Programming/🕸 About architecture.md"
   ]
 }

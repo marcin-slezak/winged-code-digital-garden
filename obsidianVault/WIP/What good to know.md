@@ -1,0 +1,3 @@
+- fetch api (what is response, .json,  authorization)
+- how you can add middleware in expressjs
+- bodyParser

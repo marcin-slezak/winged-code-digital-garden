@@ -7,14 +7,15 @@ import {copyMediaToPublicFolder} from './media'
 export type ObsidianNextConnectionProps = {
     vaultPath: string,
     assetPath: string,
-    urlPagesPrefix: string
+    urlPagesPrefix: string,
+    ignoreFolders?: string[]
 }
-export const obsidianNextConnection = ({vaultPath, assetPath, urlPagesPrefix}: ObsidianNextConnectionProps) => {
+export const obsidianNextConnection = ({vaultPath, assetPath, urlPagesPrefix, ignoreFolders}: ObsidianNextConnectionProps) => {
     const getNextPaths = async () => {
-        const filesFlat = await getObsidianFilesFlat(vaultPath, { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
+        const filesFlat = await getObsidianFilesFlat(vaultPath, { filesExtensionToAccept: PAGES_FILES_EXTENSIONS, ignoreFolders })
         return filesFlat.map(file => ({ params: { slug: getUrlToFile(file).split('/').filter(e => e) } }))
     }
-    const getFilesTree = async () => getObsidianFilesTree(vaultPath,{ filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
+    const getFilesTree = async () => getObsidianFilesTree(vaultPath,{ filesExtensionToAccept: PAGES_FILES_EXTENSIONS, ignoreFolders })
 
     const getFilesFlat = async () => await getObsidianFilesFlat(vaultPath, { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
     const getFileBySlug = async (slug: string[]): Promise<File|null> => {

@@ -43,7 +43,8 @@ export async function getStaticProps({ params }: { params: { slug?: string[] } }
   const onc = obsidianNextConnection({
     vaultPath: path.join(process.cwd(), 'obsidianVault'),
     assetPath: path.join(process.cwd(), 'public/assets/'),
-    urlPagesPrefix: 'garden'
+    urlPagesPrefix: 'garden',
+    ignoreFolders: process.env.NEXT_PUBLIC_IGNORE_OBSIDIAN_FOLDERS?.split(',')
   })
 
   if(process.env.NEXT_PUBLIC_DOMAIN){

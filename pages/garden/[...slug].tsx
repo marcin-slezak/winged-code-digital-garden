@@ -34,7 +34,8 @@ const Garden: FunctionComponent<GardenProps> = ({ meta, files, file, fileContent
 const getObsidian = () => obsidianNextConnection({
   vaultPath: path.join(process.cwd(), 'obsidianVault'),
   assetPath: path.join(process.cwd(), 'public/assets/'),
-  urlPagesPrefix: 'garden'
+  urlPagesPrefix: 'garden',
+  ignoreFolders: process.env.NEXT_PUBLIC_IGNORE_OBSIDIAN_FOLDERS?.split(',')
 })
 
 export async function getStaticProps({ params }: { params: { slug?: string[] } }) {
