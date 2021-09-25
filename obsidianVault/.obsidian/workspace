@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "cb6191f53f35256a",
+        "id": "da7afb0b7064f045",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "WIP/What good to know.md",
+            "file": "Projects/Digital garden/🌹 Digital garden.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WIP/What good to know.md",
+                "file": "Projects/Digital garden/🌹 Digital garden.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -83,19 +83,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "cb6191f53f35256a",
+  "active": "da7afb0b7064f045",
   "lastOpenFiles": [
-    "Private/What good to know.md",
-    "Private/Untitled.md",
     "Projects/Digital garden/🌹 Digital garden.md",
+    "Projects/Digital garden/☘️ Test markdown to html.md",
+    "Projects/Digital garden/☘️ test markdown to html.md",
+    "Projects/Digital garden/☘️ test elements.md",
     "Projects/Digital garden/🧪 test elements.md",
-    "Projects/Digital garden/🪴 Digital garden.md",
-    "Programming/Apache htaccess rules for a dump server.md",
-    "Programming/Untitled.md",
-    "Programming/🔌 Apollo Client Devtools.md",
-    "Programming/🙈 Redux - test automation.md",
-    "Programming/🕸 About architecture.md"
+    "attachements/Pasted image 20210925003401.png",
+    "Other/🧑‍💻 Apps that improves work on macOS.md",
+    "Untitled.md",
+    "Programming/💿 Recoil vs Redux.md",
+    "Programming/⌨️ Visual Studio Code plugins.md"
   ]
 }
