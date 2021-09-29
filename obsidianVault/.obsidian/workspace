@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Projects/Digital garden/🌹 Digital garden.md",
+            "file": "Programming/🐋 Nx FAQ.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/Digital garden/🌹 Digital garden.md",
+                "file": "Programming/🐋 Nx FAQ.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "da7afb0b7064f045",
   "lastOpenFiles": [
-    "Projects/Digital garden/🌹 Digital garden.md",
-    "Projects/Digital garden/☘️ Test markdown to html.md",
-    "Projects/Digital garden/☘️ test markdown to html.md",
-    "Projects/Digital garden/☘️ test elements.md",
-    "Projects/Digital garden/🧪 test elements.md",
-    "attachements/Pasted image 20210925003401.png",
-    "Other/🧑‍💻 Apps that improves work on macOS.md",
-    "Untitled.md",
-    "Programming/💿 Recoil vs Redux.md",
-    "Programming/⌨️ Visual Studio Code plugins.md"
+    "Programming/Untitled.md",
+    "WIP/content creation expectations.md",
+    "WIP/Untitled.md",
+    "Programming/☠️ Technical debt.md",
+    "Programming/👮‍♀️ React and TypeScript.md",
+    "Programming/🔧 Utility Types.md",
+    "Programming/🕸 About architecture.md",
+    "WIP/What good to know.md",
+    "WIP/possible clip managers.md",
+    "Programming/💿 Recoil vs Redux.md"
   ]
 }

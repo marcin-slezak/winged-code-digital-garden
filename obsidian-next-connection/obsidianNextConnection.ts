@@ -17,7 +17,7 @@ export const obsidianNextConnection = ({vaultPath, assetPath, urlPagesPrefix, ig
     }
     const getFilesTree = async () => getObsidianFilesTree(vaultPath,{ filesExtensionToAccept: PAGES_FILES_EXTENSIONS, ignoreFolders })
 
-    const getFilesFlat = async () => await getObsidianFilesFlat(vaultPath, { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
+    const getFilesFlat = async () => await getObsidianFilesFlat(vaultPath, { filesExtensionToAccept: PAGES_FILES_EXTENSIONS, ignoreFolders })
     const getFileBySlug = async (slug: string[]): Promise<File|null> => {
         const filesFlat = await getObsidianFilesFlat(vaultPath,  { filesExtensionToAccept: PAGES_FILES_EXTENSIONS })
         return filesFlat.find(findFileByUrl(slugToUrl(slug))) || null

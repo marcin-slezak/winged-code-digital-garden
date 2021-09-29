@@ -120,3 +120,11 @@ export const SomeComponent: React.FC<SomeComponentProps> = () => {
 	return (...)
 }
 ```
+
+
+## useInterval
+
+```ts
+const intervalId: NodeJS.Timer = setInterval(() => {...}, 1000)
+
+```

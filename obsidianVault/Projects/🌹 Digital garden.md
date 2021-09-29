@@ -43,7 +43,7 @@ I built the website as a static site generator. What does it mean? During a buil
 
 Pages are build with content that comes from two sources:
 1. Pages built as custom react components like `Home Page` or `Contant page`. Those pages can be customized as much as we want. 
-2. Pages built by parsing markdown files from Obsidian vault. I really wanted to keep this website fast. Generating HTML from Markdown can be really CPU expensive (not mention about library/additional js files that need to be loaded by a browser) what can easly affect page performace badly. Because of that, translation from Markdown to HTML is performed during build time (via [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation)). Here is a example page that shows all available components [[☘️ Test markdown to html]]
+2. Pages built by parsing markdown files from Obsidian vault. I really wanted to keep this website fast. Generating HTML from Markdown can be really CPU expensive (not mention about library/additional js files that need to be loaded by a browser) what can easly affect page performace badly. Because of that, translation from Markdown to HTML is performed during build time (via [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching#getstaticprops-static-generation)). 
 
 Page code and Obsidian content are available in https://github.com/marcin-slezak/winged-code-digital-garden GitHub repository. Most of the logic responsible for connecting Next.js application with Obsidian vault is in [obsidian-next-cnnection](https://github.com/marcin-slezak/winged-code-digital-garden/tree/main/obsidian-next-connection) folder, and I believe that can be easily adopted by anyone who wants's to do a similar project.
 
