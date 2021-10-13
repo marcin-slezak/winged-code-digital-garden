@@ -128,3 +128,16 @@ export const SomeComponent: React.FC<SomeComponentProps> = () => {
 const intervalId: NodeJS.Timer = setInterval(() => {...}, 1000)
 
 ```
+
+
+## map/reduce/filter on union type
+
+regarding to https://github.com/microsoft/TypeScript/issues/36390
+
+```ts
+const arr: number[] | string[] = [];
+// Add as any[]
+(arr as any[]).map((a: number | string, index: number) => { 
+    return index
+});
+```

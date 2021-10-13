@@ -1,3 +1,5 @@
+Working with static pages generated from NextJs:
+
 ```
 SecFilterEngine On
 SecFilterScanPOST On

@@ -42,6 +42,24 @@ type UserPublic = Pick<User, "name" | "email">
 ```
 
 
+## `ReturnType<FunctionType>`
+
+Useful when we can not access to type that is return from a function
+
+```ts
+import {useHistory} from 'react-router'
+
+
+cnst someFunctionThatNeedHistory = (history: ReturnType<typeof useHistory>) => {
+	//...
+}
+
+
+const history = useHistory()
+someFunctionThatNeedHistory(history)
+
+```
+
 ## There is more
 
 The full list of Utility Types are available here:

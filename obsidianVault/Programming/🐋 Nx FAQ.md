@@ -31,7 +31,11 @@ Consider using [proxy functionality](https://nx.dev/l/a/tutorial/06-proxy#angula
 ## Why use NX?
 
 From my perspective:
-- eslint, typerscript, jestjs and e2e configured out of the box (what can be especially  challenging for monorepo)
+- eslint, typerscript, jestjs and cypress configured out of the box (what can be especially  challenging for monorepo)
 - support beloved tools: React, NextJs, NestJS, ExpressJs, Storybook
-- monorepo and shared code done right
+- monorepo and shared code done ~~right~~ little better
 - tools that helps to keep dependencies under control (eslint rules + dep-graph)
+
+## why do not use NX?
+- some tools assume that you can put some resources (e.g. config files) in a root folder what is not a case for NX (e.g. Typeorm CLI and  ormconfig.ts)
+- next tools, more to learn, new issues and workarounds

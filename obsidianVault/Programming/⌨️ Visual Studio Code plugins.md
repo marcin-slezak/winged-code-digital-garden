@@ -31,3 +31,7 @@ Sometimes make usefull suggestions
 ## [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer&ssr=false#overview) 
 
 ⚠️deprecated - VS Code now supports this natively: https://code.visualstudio.com/updates/v1_60#_high-performance-bracket-pair-colorization
+
+Additionaly in version 1.61 was introduced rudimentary bracket pair guides that can be enabled by  `editor.guides.bracketPairs` option.
+
+![[bracket-pair-guides.png]]
