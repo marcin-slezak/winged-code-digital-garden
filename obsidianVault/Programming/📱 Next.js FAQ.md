@@ -8,3 +8,5 @@ Next.js give you a couple of things out of the box in comparison to create-react
 There is also a huge community behind Next.js so it's easy to find a solution for a common problem.
 
 p.s. I do not like Vercel hosting (the company that develops Next.js) - their admin panel UI is messy for me
+
+p.s.2 NextJs [Api routes](https://nextjs.org/docs/api-routes/introduction) are quite limtted, e.g. it's not so nice to use typeorm there

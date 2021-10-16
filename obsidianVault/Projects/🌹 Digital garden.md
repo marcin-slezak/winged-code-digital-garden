@@ -37,7 +37,7 @@ Page that contains content from obsidian👇
 
 ## How
 
-This project is using [Next.js](https://nextjs.org/) framework, including React and TypeScript. The reason why I chose Next.js are described here: [[📱 Why use Next.js?]]
+This project is using [Next.js](https://nextjs.org/) framework, including React and TypeScript. The reason why I chose Next.js are described here: [[📱 Next.js FAQ]]
 
 I built the website as a static site generator. What does it mean? During a build, the script takes all definitions, content, templates, process them, and outputs them to a folder as a bunch of static files (HTML, CSS, js) that can be loaded directly by the browser through a server that serves static content. Because server-side serve static content generated during build, it's speedy, secure and has low server requirements.
 

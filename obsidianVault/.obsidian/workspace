@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "332fe98a7a7d5e88",
+        "id": "9b7f964bda1e2d92",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Projects/🧹  Nestjs and clean architecture POC.md",
+            "file": "Programming/📦 Webpack.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Projects/🧹  Nestjs and clean architecture POC.md",
+                "file": "Programming/📦 Webpack.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +86,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "332fe98a7a7d5e88",
+  "active": "9b7f964bda1e2d92",
   "lastOpenFiles": [
+    "Programming/📦 Webpack.md",
+    "Programming/Untitled.md",
+    "Programming/📱 Next.js FAQ.md",
+    "Programming/📱 Why use Next.js?.md",
     "Projects/🧹  Nestjs and clean architecture POC.md",
     "WIP/🧹  Clean Architecture in Practice.md",
     "WIP/Clean Architecture in Practice.md",
     "Programming/🧹 Clean code.md",
     "Projects/🌹 Digital garden.md",
-    "Programming/🕸 About code architecture.md",
-    "WIP/Basic JS Framework.md",
-    "WIP/☘️ Test markdown to html.md",
-    "Programming/🐋 Nx FAQ.md",
-    "Programming/😱 JS prototypes.md"
+    "Programming/🕸 About code architecture.md"
   ]
 }
