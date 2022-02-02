@@ -52,3 +52,7 @@
     justify-content: flex-end
 }
 
+.strike {
+    text-decoration: line-through;
+}
+

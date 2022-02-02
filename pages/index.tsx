@@ -31,7 +31,7 @@ const Home: FunctionComponent<HomeProps> = () => {
         <div>
 
         <p className={styles.mainText}>
-          It's just my unofficial, tiny part of the <strike>garden</strike> internet where I collect knowledge that may be useful for me in the future.
+          It's just my unofficial, tiny part of the <span className={styles.strike}>garden</span> internet where I collect knowledge that may be useful for me in the future. 🤓
         </p>
         <Link href="/garden">
           <Button text="Digital garden" />

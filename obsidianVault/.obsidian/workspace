@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Programming/🙈 Redux - test automation.md",
+            "file": "Programming/🔗 Links.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/🙈 Redux - test automation.md",
+                "file": "Programming/🔗 Links.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "70c37cedc219d671",
   "lastOpenFiles": [
+    "Programming/🔗 Links.md",
+    "Other/🔗 Links.md",
     "Programming/🙈 Redux - test automation.md",
     "Programming/🕸 About code architecture.md",
-    "Programming/🔗 Links.md",
     "Programming/😱 JS prototypes.md",
     "Programming/🔧 Utility Types.md",
     "Programming/📱 Next.js FAQ.md",
     "Programming/🧹 Clean code.md",
     "Programming/🔌 Apollo Client Devtools.md",
-    "Programming/📺 Checking how responsive web app looks like on different screen sizes.md",
-    "Programming/📦 Webpack.md"
+    "Programming/📺 Checking how responsive web app looks like on different screen sizes.md"
   ]
 }

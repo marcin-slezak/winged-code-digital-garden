@@ -8,3 +8,5 @@
  - https://github.com/ryanmcdermott/clean-code-javascript clean code in JS
 - https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/ Clean Code: Smells and Heuristics
 - https://zellwk.com/blog/javascript-prototype/ js prototypes explained
+- https://www.chartjs.org/ battle tested chart library
+- https://www.npmjs.com/package/npkill - how find and remove unnecessery node_modules from a hard drive
