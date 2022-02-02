@@ -31,7 +31,7 @@ const Home: FunctionComponent<HomeProps> = () => {
         <div>
 
         <p className={styles.mainText}>
-          I fell in love with software development many years ago. After a few dozens of projects made for someone else, I finally created my own disorganised and chaotic piece of the Internet. So I drop here notes, articles, news and some of my thoughts about programming and software development management.
+          It's just my unofficial, tiny part of the <strike>garden</strike> internet where I collect knowledge that may be useful for me in the future.
         </p>
         <Link href="/garden">
           <Button text="Digital garden" />

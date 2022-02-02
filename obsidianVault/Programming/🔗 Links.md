@@ -1,0 +1,10 @@
+ - https://github.com/simonh1000/ftp-deploy#readme  helps automate deploy via sftp process in 10 minutes. 
+ - https://css-tricks.com/snippets/css/a-guide-to-flexbox/ complete flexbox guide
+ - https://recoiljs.org/ Redux settled down in many software developers toolset but does state management need to be soo complicated? Well, looking at Recoil I think that it may be a much better way 😲. Time to test it in next POC project 😁...
+ - https://milkdown.dev/#/ promising WYSIWYG markdown editor that supports [mermaid diagrams](https://mermaid-js.github.io/mermaid)
+ - https://stackoverflow.com/questions/44215896/markdown-metadata-format stackoverflow describing the options to put metadata to markdown file 
+ - https://responsively.app app that helps with website or app RWD testing 
+ - https://www.apollographql.com/docs/react/development-testing/developer-tooling/#apollo-client-devtools Usefull when working with Apollo Client (GraphQL)
+ - https://github.com/ryanmcdermott/clean-code-javascript clean code in JS
+- https://moderatemisbehaviour.github.io/clean-code-smells-and-heuristics/ Clean Code: Smells and Heuristics
+- https://zellwk.com/blog/javascript-prototype/ js prototypes explained

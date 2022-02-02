@@ -25,3 +25,8 @@ Apple devices are not the most powerful on the market; you can quickly push your
 ## [MacPass](https://macpassapp.org/) - KeePass-compatible password manager
 
 Using simple passwords is not a good idea, nor having the same password for different applications. So nowadays, a password manager is a must-have and MacPass (compatible with KeePass) is one of the best options.
+
+## [Android File Transfer](https://www.android.com/filetransfer/)
+
+Transfer files from Android device to your Mac via USB cable
+

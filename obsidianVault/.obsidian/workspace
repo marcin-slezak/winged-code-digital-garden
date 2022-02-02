@@ -4,13 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "9b7f964bda1e2d92",
+        "id": "70c37cedc219d671",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Programming/📦 Webpack.md",
-            "mode": "source"
+            "file": "Programming/🙈 Redux - test automation.md",
+            "mode": "source",
+            "source": false
           }
         }
       }
@@ -68,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Programming/📦 Webpack.md",
+                "file": "Programming/🙈 Redux - test automation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "9b7f964bda1e2d92",
+  "active": "70c37cedc219d671",
   "lastOpenFiles": [
-    "Programming/📦 Webpack.md",
-    "Programming/Untitled.md",
+    "Programming/🙈 Redux - test automation.md",
+    "Programming/🕸 About code architecture.md",
+    "Programming/🔗 Links.md",
+    "Programming/😱 JS prototypes.md",
+    "Programming/🔧 Utility Types.md",
     "Programming/📱 Next.js FAQ.md",
-    "Programming/📱 Why use Next.js?.md",
-    "Projects/🧹  Nestjs and clean architecture POC.md",
-    "WIP/🧹  Clean Architecture in Practice.md",
-    "WIP/Clean Architecture in Practice.md",
     "Programming/🧹 Clean code.md",
-    "Projects/🌹 Digital garden.md",
-    "Programming/🕸 About code architecture.md"
+    "Programming/🔌 Apollo Client Devtools.md",
+    "Programming/📺 Checking how responsive web app looks like on different screen sizes.md",
+    "Programming/📦 Webpack.md"
   ]
 }

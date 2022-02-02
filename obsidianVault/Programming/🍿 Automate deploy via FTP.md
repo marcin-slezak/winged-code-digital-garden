@@ -1,1 +1,0 @@
-It doesn't need to be boring 🥱 and time consuming process, [ftp-deploy](https://github.com/simonh1000/ftp-deploy#readme) can help you automate this process in 10 minutes. I'm using that to deploy static generated pages to dumb server and works really nice. Agile & frequent delivery 🧘‍♂️.

@@ -35,3 +35,7 @@ Sometimes make usefull suggestions
 Additionaly in version 1.61 was introduced rudimentary bracket pair guides that can be enabled by  `editor.guides.bracketPairs` option.
 
 ![[bracket-pair-guides.png]]
+
+## [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+
+Just to keep control on changes in more dynamic projects

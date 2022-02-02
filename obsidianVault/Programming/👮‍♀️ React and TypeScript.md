@@ -141,3 +141,46 @@ const arr: number[] | string[] = [];
     return index
 });
 ```
+
+
+## Object.keys
+
+```ts
+
+enum TasksTypes {
+	PHONE_CALL = 'Phone call',
+	WRITE_EMAIL = 'Write email',
+	MEETING = 'Meeting',
+}
+
+(Object.keys(TasksTypes) as Array<keyof typeof TasksTypes>).map(key => {
+	// key is keyof TasksTypes
+})
+
+```
+
+## Typescript and Yup
+
+```ts
+import * as yup from 'yup';
+
+const personSchema = yup.object({
+  firstName: yup.string().defined(),
+  nickName: yup.string().default('').nullable(),
+  sex: yup
+    .mixed()
+    .oneOf(['male', 'female', 'other'] as const)
+    .defined(),
+  email: yup.string().nullable().email(),
+  birthDate: yup.date().nullable().min(new Date(1900, 0, 1)),
+});
+
+interface Person extends yup.InferType<typeof personSchema> {}
+
+const person: Person = await personSchema.validate(req.body.user, {stripUnknown: true}).catch(e => e)
+
+if (person instanceof yup.ValidationError){
+    return false;
+}
+									   
+```

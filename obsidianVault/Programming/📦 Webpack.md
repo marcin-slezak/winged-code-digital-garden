@@ -69,3 +69,12 @@ module.exports = {
 	</body>
 </html>
 ```
+
+### npm scripts
+
+```json
+{
+	"build": "webpack",	
+	"start": "webpack serve --open"
+}
+```

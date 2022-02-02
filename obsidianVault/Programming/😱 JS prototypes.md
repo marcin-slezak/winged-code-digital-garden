@@ -1,1 +1,0 @@
-I could not find an article that describe it better : [Understanding JavaScript Prototype](https://zellwk.com/blog/javascript-prototype/)
